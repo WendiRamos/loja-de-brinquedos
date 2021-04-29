@@ -12,7 +12,7 @@ namespace Loja_de_Brinquedos28
         public string Nome { get; set; }
         public string Cor { get; set; }
         public int Quantidade { get; set; }
-        public bool Status { get; set; }
+        public bool Ativo { get; set; }
 
     }
 }

@@ -24,11 +24,11 @@ namespace Loja_de_Brinquedos28
             if (Convert.ToString(Console.ReadLine()) == "1")
             {
 
-                brinquedo.Status = true;
+                brinquedo.Ativo = true;
             }
             else
             {
-                brinquedo.Status = false;
+                brinquedo.Ativo = false;
             };
 
 
@@ -36,7 +36,7 @@ namespace Loja_de_Brinquedos28
             Console.WriteLine("Nome:" + brinquedo.Nome);
             Console.WriteLine("Cor:" + brinquedo.Cor);
             Console.WriteLine("Quantidade:" + brinquedo.Quantidade);
-            Console.WriteLine("Status:" + brinquedo.Status);
+            Console.WriteLine("Ativo:" + brinquedo.Ativo);
 
             Console.ReadLine();
 
