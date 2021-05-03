@@ -9,7 +9,7 @@ namespace Loja_de_Brinquedos28
         {
             Brinquedo brinquedo = new Brinquedo();
             Console.WriteLine("Insira o ID:");
-            brinquedo.Id = Convert.ToInt16(Console.ReadLine());
+            brinquedo.Id = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Insira o nome:");
             brinquedo.Nome = Console.ReadLine();
@@ -18,25 +18,24 @@ namespace Loja_de_Brinquedos28
             brinquedo.Cor = Console.ReadLine();
 
             Console.WriteLine("Insira a quatidade:");
-            brinquedo.Quantidade = Convert.ToInt16(Console.ReadLine());
+            brinquedo.Quantidade = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Status do Usuário:\n 1-Ativo;\n 2-Inativo;");
-            if (Convert.ToString(Console.ReadLine()) == "1")
-            {
-
+            if (Console.ReadLine() == "1")
                 brinquedo.Ativo = true;
-            }
+
             else
-            {
                 brinquedo.Ativo = false;
-            };
-
-
+          
             Console.WriteLine("ID:" + brinquedo.Id);
             Console.WriteLine("Nome:" + brinquedo.Nome);
             Console.WriteLine("Cor:" + brinquedo.Cor);
             Console.WriteLine("Quantidade:" + brinquedo.Quantidade);
-            Console.WriteLine("Ativo:" + brinquedo.Ativo);
+            if (brinquedo.Ativo == true)
+                Console.WriteLine("Status Ativo");
+            else
+                Console.WriteLine("Status Inativo");
+            
 
             Console.ReadLine();
 
